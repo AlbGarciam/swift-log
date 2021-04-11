@@ -19,6 +19,7 @@ let package = Package(
     name: "swift-log",
     products: [
         .library(name: "Logging", targets: ["Logging"]),
+        .library(name: "LoggingDynamic", type: .dynamic, targets: ["Logging"]),
     ],
     targets: [
         .target(
